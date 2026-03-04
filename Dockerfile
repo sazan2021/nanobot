@@ -33,6 +33,7 @@ WORKDIR /app
 # Create config directory
 RUN mkdir -p /root/.nanobot
 COPY config.json /root/.nanobot/config.json
+RUN mkdir -p /root/.nanobot/workspace
 
 # Gateway default port
 EXPOSE 18790
